@@ -28,7 +28,7 @@ body {
 
 .card {
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -38,7 +38,7 @@ body {
 }
 
 p.collapse:not(.show) {
-    height: 100px !important;
+    height: 150px !important;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -46,13 +46,9 @@ p.collapse:not(.show) {
 }
 
 p.collapsing {
-    min-height: 100px !important;
+    min-height: 150px !important;
 }
 
 a.collapsed:after {
     content: '+ Read More';
-}
-
-a:not(.collapsed):after {
-    content: '- Read Less';
 }
