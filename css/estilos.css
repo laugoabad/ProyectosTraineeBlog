@@ -29,8 +29,8 @@ body {
 }
 
 .card {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -38,7 +38,7 @@ body {
 .autor {
     color: grey;
     padding-bottom: 0.5rem;
-    margin: 1rem;
+    margin: 0.5em;
     border-bottom: 1px solid lightgray;
     font-size: 1rem;
 }
@@ -47,7 +47,7 @@ body {
     font-size: 1rem;
 }
 .nombre-big {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: 1rem;
 }
 
