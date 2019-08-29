@@ -22,8 +22,8 @@ body {
 }
 
 .foto {
-    min-width: 70px;
-    max-height: 60px;
+    min-width: 80px;
+    max-height: 65px;
     border-radius: 50%;
     width: 20px;
 }
@@ -47,7 +47,7 @@ body {
     font-size: 1rem;
 }
 .nombre-big {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
 }
 
