@@ -35,6 +35,9 @@ body {
 
 .autor {
     color: grey;
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+    border-bottom: 1px solid lightgray;
 }
 
 p.collapse:not(.show) {
