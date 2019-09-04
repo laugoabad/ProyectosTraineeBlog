@@ -40,8 +40,8 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.06);
-    -moz-transform: scale(1.06);
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
     transition-duration: 1s;
     -moz-transition-duration: 1s;
 }
@@ -67,7 +67,7 @@ body {
     font-size: 0.8rem;
 }
 
-p.collapse:not(.show) {
+p.collapse:not(.show), #collapseComentarios:not(.show){
     height: 150px !important;
     overflow: hidden;
     display: -webkit-box;
@@ -75,14 +75,14 @@ p.collapse:not(.show) {
     -webkit-box-orient: vertical;
 }
 
-p.collapsing {
+p.collapsing, #collapseComentarios.collapsing{
     min-height: 150px !important;
 }
 
-a.collapsed:after {
-    content: '+ Read More';
+a.collapsed:after, #collapseComentarios.collapsed:after {
+    content: '+ Leer Más';
 }
 
-/* a:not(.collapsed):after {
-    content: '- Read Less';
-} */
+a:not(.collapsed):after, #collapseComentarios:not(.collapsed):after {
+    content: '- Leer Menos';
+}
