@@ -16,6 +16,10 @@ body {
     background-color: lightgray;
 }
 
+li {
+    list-style-type: none;
+}
+
 .header {
     margin: 2rem;
     font-size: 4rem;
@@ -67,7 +71,7 @@ body {
     font-size: 0.8rem;
 }
 
-p.collapse:not(.show), #collapseComentarios:not(.show){
+p.collapse:not(.show), #collapseComentarios:not(.show) {
     height: 150px !important;
     overflow: hidden;
     display: -webkit-box;
@@ -75,7 +79,7 @@ p.collapse:not(.show), #collapseComentarios:not(.show){
     -webkit-box-orient: vertical;
 }
 
-p.collapsing, #collapseComentarios.collapsing{
+p.collapsing, #collapseComentarios.collapsing {
     min-height: 150px !important;
 }
 

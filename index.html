@@ -19,36 +19,28 @@
 
 <body>
     <div id="app">
-        <b-container class="bv-example-row">
-            <header>{{tituloBlog}}</header>
-            <section class="d-flex justify-content-center">
-                <b-row>
-                    <article class=" col-11 col-md-6 col-lg-4 col-xl-3">
-                        <b-card title="TITULO" header-tag="header" footer-tag="footer">
-                            <ul>
-                                <li v-for="nota of notas">
-                                    <h6 slot="header" class="mb-0">{{nota.autorNota}}}}</h6>
-                                    <b-card-text>
-                                        <p class="card-text collapse">{{nota.texto}}                                   
-                                        </p>
-                                    </b-card-text>
-
-                                </li>
-                            </ul>
-
-                            
-                            <b-button href="#" variant="primary">Go somewhere</b-button>
-                            <em slot="footer">Footer Slot</em>
-                        </b-card>
-                    </article>
+        <div class="container">
+            <header class="header">{{tituloBlog}}</header>
+            <section >
+                <ul class="row d-flex justify-content-center">
+                    <li v-for="nota of notas" class="card col-11 col-md-6 col-lg-4 col-xl-3">
+                <article>
+                    <div class="row autor">
+                        <img src="./imgs/images.jpg" alt="foto" class="foto col-1 img-responsive">
+                        <h6 class="nombre-small col-8">{{nota.autor}}</h6>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{nota.titulo}}</h5>
+                
+                        <p class="card-text collapse">{{nota.texto}}</p>
+                        <a class="collapsed" href="./cards/card-1.html"></a>
+                    </div>
+                </article>
+                </li>
+            </ul>
             </section>
-        </b-container>
+        </div>
     </div>
-
-
-
-
-
 
 
 
