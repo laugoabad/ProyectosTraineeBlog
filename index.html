@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie.edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+
+    <!-- Required scripts -->
+    <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 
 <body>
-    <div class="container">
+    <div id="app">
+        <b-container class="bv-example-row">
+            <header>{{tituloBlog}}</header>
+            <section class="d-flex justify-content-center">
+                <b-row>
+                    <article class=" col-11 col-md-6 col-lg-4 col-xl-3">
+                        <b-card title="TITULO" header-tag="header" footer-tag="footer">
+                            <ul>
+                                <li v-for="nota of notas">
+                                    <h6 slot="header" class="mb-0">{{nota.autorNota}}}}</h6>
+                                    <b-card-text>
+                                        <p class="card-text collapse">{{nota.texto}}                                   
+                                        </p>
+                                    </b-card-text>
+
+                                </li>
+                            </ul>
+
+                            
+                            <b-button href="#" variant="primary">Go somewhere</b-button>
+                            <em slot="footer">Footer Slot</em>
+                        </b-card>
+                    </article>
+            </section>
+        </b-container>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
         <header class="header"> Blog</header>
         <section class="row d-flex justify-content-center">
             <article class="card col-11 col-md-6 col-lg-4 col-xl-3">
@@ -128,8 +169,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-        <script src="./js/blog.js"></script>
+        crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/blog.js"></script>
 </body>
 
 </html>
